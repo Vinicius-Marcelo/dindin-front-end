@@ -1,6 +1,6 @@
 import * as H from './styles';
 
-function Home() {
+function Main() {
   return (
     <H.Container>
       <h1>Hello Word</h1>
@@ -8,4 +8,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Main;

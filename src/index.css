@@ -14,6 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --white: #fff;
+  --rebeccapurple: #7978d9;
 }
 
 code {

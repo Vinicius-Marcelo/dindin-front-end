@@ -8,10 +8,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { useState } from 'react';
-import useUser from '../../../hooks/useUser';
 
-export default function InputAdornments() {
-    const { loginForm, setLoginForm } = useUser();
+export default function InputAdornments({ form, setForm }) {
     const [values, setValues] = useState({
         amount: ``,
         password: ``,
@@ -31,7 +29,7 @@ export default function InputAdornments() {
     };
 
     const handleChangerForm = (event) => {
-        setLoginForm({ ...loginForm, [event.target.name]: event.target.value });
+        setForm({ ...form, [event.target.name]: event.target.value });
     };
 
     return (
@@ -48,7 +46,7 @@ export default function InputAdornments() {
                 }}
                 id="outlined-required"
                 label="E-mail"
-                value={loginForm.email}
+                value={form.email}
                 name="email"
                 onChange={handleChangerForm}
             />
@@ -66,8 +64,8 @@ export default function InputAdornments() {
                     <OutlinedInput
                         id="outlined-adornment-password"
                         type={values.showPassword ? `text` : `password`}
-                        value={loginForm.password}
-                        name="password"
+                        value={form.senha}
+                        name="senha"
                         onChange={handleChangerForm}
                         endAdornment={(
                             <InputAdornment position="end">

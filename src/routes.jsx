@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { UserProvider } from './contexts/UserContext';
-import Home from './pages/Home';
+import Main from './pages/Home/Main';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
@@ -10,7 +10,7 @@ export default function ProjectRoutes() {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/Home" element={<Home />} />
+                <Route path="/Home" element={<Main />} />
             </Routes>
         </UserProvider>
     );

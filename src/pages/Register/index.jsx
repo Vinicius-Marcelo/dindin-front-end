@@ -7,7 +7,7 @@ import InputsRegister from '../../components/Inputs/RegisterPages';
 import * as R from './styles';
 
 const defaultValuesForm = {
-  name: ``, email: ``, password: ``, confirmPassword: ``
+  nome: ``, email: ``, senha: ``, confirmeSenha: ``
 };
 
 function Home() {

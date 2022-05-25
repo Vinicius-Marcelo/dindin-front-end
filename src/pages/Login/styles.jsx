@@ -14,10 +14,6 @@ export const Container = styled.div`
     background-size: cover;
 
     padding: 0 12.2rem 0 10.0rem;
-    --white: #fff;
-    --rebeccapurple: #7978d9;
-
-
 
         .logo{
             display: flex;

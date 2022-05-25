@@ -34,30 +34,38 @@ export default function InputAdornments({ form, setForm }) {
 
     return (
         <Box sx={{
-            display: `flex`, flexDirection: `column`, alignItems: `center`, flexWrap: `wrap`, gap: `1.5rem`
+            display: `flex`,
+            flexDirection: `column`,
+            alignItems: `center`,
+            flexWrap: `wrap`,
+            gap: `1.5rem`
         }}
         >
             <TextField
                 sx={{
-                    width: `449px`,
-                    height: `63px`,
+                    width: `44.9rem`,
+                    height: `6.3rem`,
                     fontSize: `18px`,
-                    lineHeight: `21px`
+                    lineHeight: `21px`,
+                    "@media(max-width: 560px)": { width: `26.0rem` },
+                    "@media(max-width: 340px)": { width: `24.0rem` }
                 }}
-                id="outlined-required"
+                id="outlined-required-name"
                 label="Name"
-                value={form.name}
-                name="name"
+                value={form.nome}
+                name="nome"
                 onChange={handleChangerForm}
             />
             <TextField
                 sx={{
-                    width: `449px`,
-                    height: `63px`,
+                    width: `44.9rem`,
+                    height: `6.3rem`,
                     fontSize: `18px`,
-                    lineHeight: `21px`
+                    lineHeight: `21px`,
+                    "@media(max-width: 560px)": { width: `26.0rem` },
+                    "@media(max-width: 340px)": { width: `24.0rem` }
                 }}
-                id="outlined-required"
+                id="outlined-required-email"
                 label="E-mail"
                 value={form.email}
                 name="email"
@@ -67,10 +75,12 @@ export default function InputAdornments({ form, setForm }) {
             <div>
                 <FormControl
                     sx={{
-                        width: `449px`,
-                        height: `63px`,
+                        width: `44.9rem`,
+                        height: `6.3rem`,
                         fontSize: `18px`,
-                        lineHeight: `21px`
+                        lineHeight: `21px`,
+                        "@media(max-width: 560px)": { width: `26.0rem` },
+                        "@media(max-width: 340px)": { width: `24.0rem` }
                     }}
                     variant="outlined"
                 >
@@ -78,8 +88,8 @@ export default function InputAdornments({ form, setForm }) {
                     <OutlinedInput
                         id="outlined-adornment-password"
                         type={values.showPassword ? `text` : `password`}
-                        value={form.password}
-                        name="password"
+                        value={form.senha}
+                        name="senha"
                         onChange={handleChangerForm}
                         endAdornment={(
                             <InputAdornment position="end">
@@ -100,10 +110,12 @@ export default function InputAdornments({ form, setForm }) {
             <div>
                 <FormControl
                     sx={{
-                        width: `449px`,
-                        height: `63px`,
+                        width: `44.9rem`,
+                        height: `63.rem`,
                         fontSize: `18px`,
-                        lineHeight: `21px`
+                        lineHeight: `21px`,
+                        "@media(max-width: 560px)": { width: `26.0rem` },
+                        "@media(max-width: 340px)": { width: `24.0rem` }
                     }}
                     variant="outlined"
                 >
@@ -111,8 +123,8 @@ export default function InputAdornments({ form, setForm }) {
                     <OutlinedInput
                         id="outlined-adornment-confirm-password"
                         type={values.showPassword ? `text` : `password`}
-                        value={form.confirmPassword}
-                        name="confirmPassword"
+                        value={form.confirmeSenha}
+                        name="confirmeSenha"
                         onChange={handleChangerForm}
                         endAdornment={(
                             <InputAdornment position="end">

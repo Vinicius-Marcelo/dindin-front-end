@@ -14,9 +14,6 @@ export const Container = styled.div`
     background-size: cover;
     background-position: center;
 
-    --white: #fff;
-    --rebeccapurple: #7978d9;
-
     .logo{
         display: flex;
         align-items: center;
@@ -35,7 +32,7 @@ export const Container = styled.div`
         justify-content: center;
 
         width: 51.3rem;
-        height: 78.1rem;
+        min-height: 60%;
         background: var(--white);
         padding: 61px 32px 57px 32px;
 
@@ -45,7 +42,7 @@ export const Container = styled.div`
                 font-size: 28px;
                 line_height: 33.18px;
                 color: var(--rebeccapurple);
-                margin-bottom: 76px;
+                margin-bottom: 7.6rem;
             }
 
             span, .link{
@@ -59,9 +56,32 @@ export const Container = styled.div`
                         text-decoration: none;
                     }
             }
+    }
 
-        @media(max-width: 1600px){
-            height: 65.0rem;
+    @media(max-width: 560px){
+        .logo{
+            left: 0;
+            right: 0;   
+        }
+
+        .card_register{
+            margin-top: 60px;
+            padding: 2.0rem 0 3.0rem 0;
+            width: 30.0rem;
+        }
+    }
+
+    @media(max-width: 350px){
+        .logo{
+            top: 20px;
+        }
+        .card_register{
+            padding: 1.5rem 0 2.0rem 0;
+            width: 85%;
+
+                h2{
+                    margin-bottom: 2.0rem;
+                }
         }
     }
 `;
